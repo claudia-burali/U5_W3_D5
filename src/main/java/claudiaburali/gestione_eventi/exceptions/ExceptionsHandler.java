@@ -1,5 +1,5 @@
 package claudiaburali.gestione_eventi.exceptions;
-import claudiaburali.gestione_dispositivi.payloads.ErrorsDTO;
+import claudiaburali.gestione_eventi.payloads.ErrorsDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
