@@ -20,10 +20,10 @@ public class Prenotazione {
     private Evento evento;
     @ManyToOne
     @JoinColumn(name = "id_utente")
-    private UtenteNormale utenteNormale;
+    private Utente utente;
 
-    public Prenotazione(Evento evento, UtenteNormale utenteNormale) {
+    public Prenotazione(Evento evento, Utente utente) {
         this.evento = evento;
-        this.utenteNormale = utenteNormale;
+        this.utente = utente;
     }
 }
