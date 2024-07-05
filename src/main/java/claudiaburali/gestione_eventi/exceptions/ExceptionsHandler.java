@@ -33,4 +33,9 @@ public class ExceptionsHandler {
         ex.printStackTrace();
         return new ErrorsDTO("Problema lato server!", LocalDateTime.now());
     }
+    @ExceptionHandler(UnauthorizedException.class)
+    @ResponseStatus (HttpStatus.FORBIDDEN)
+    public ErrorsDTO handleUnauthorized(UnauthorizedException ex){
+        return new ErrorsDTO(ex.getMessage(), LocalDateTime.now());
+    }
 }

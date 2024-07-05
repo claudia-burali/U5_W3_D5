@@ -1,6 +1,7 @@
 package claudiaburali.gestione_eventi.security;
 
 import claudiaburali.gestione_eventi.entities.Utente;
+import claudiaburali.gestione_eventi.exceptions.UnauthorizedException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
